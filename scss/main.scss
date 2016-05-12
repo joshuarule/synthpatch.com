@@ -1,0 +1,140 @@
+$bold: 'NHaasGroteskDSW01-75Bd', 'sans-serif';
+$title: 'NeueHaasGroteskDisp Pro', 'sans-serif';
+$reg:  'NeueHaasGroteskText W01', 'sans-serif';
+
+$gutter: .5em;
+
+// Mixins
+
+@mixin outline($color) {
+  // outline: 1px solid $color;
+}
+
+@import 'pagescroll';
+
+html {
+  font-size: 8px;
+  font-family: sans-serif;
+}
+
+body {
+  background: #111;
+  color: #FFF;
+  font-family: helvetica;
+  font-family: $reg;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  position: relative;
+  padding: 0 4em;
+  margin: 0 auto;
+  @include outline(blue);
+}
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 4em;
+  z-index: 100;
+}
+
+footer {
+  position: absolute;
+  bottom: 5em;
+  left:   5em;
+  // transform: translate(-50%);
+}
+
+[class^="col"] {
+  @include outline(red);
+}
+
+.logo {
+  width: 11em;
+  height: auto;
+}
+
+.row {}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.col-third {
+  width:  33.3333%;
+}
+
+.col-twoThirds {
+  width:  66.6666%;
+}
+
+.body,
+.title {
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  font-size: 4.75em;
+  line-height: 6rem;
+  color: #FFF;
+  font-family: $title;
+}
+
+.body {
+  color: #777;
+  max-width: 22em;
+  font-size: 2.25em;
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+
+.copy {
+  min-height: 33.33333vh;
+  @include outline(red);
+}
+
+.appStoreLink {
+  display: block;
+  width:  21em;
+}
+
+.imgContainer {
+  position: absolute;
+  right: 0;
+  top:  50%;
+  height: 100%;
+  width:  100%;
+  max-height: 145em;
+  max-width:  200em;
+  transform: translateY(-50%);
+  @include outline(purple);
+}
+
+.sec-1-img {
+  position: absolute;
+  top: 4em;
+  bottom: 4em;
+  right: -4em;
+  left: 4em;
+  background-image: url(../images/sp1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+  @include outline(pink);
+}

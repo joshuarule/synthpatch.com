@@ -1,0 +1,185 @@
+body, html {
+  margin: 0;
+  overflow: hidden;
+  transition: opacity 400ms; }
+
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d; }
+
+.onepage-wrapper .ops-section {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.onepage-pagination {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.onepage-pagination li {
+  padding: 0;
+  text-align: center; }
+
+.onepage-pagination li a {
+  padding: 10px;
+  width: 4px;
+  height: 4px;
+  display: block; }
+
+.onepage-pagination li a:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; }
+
+.onepage-pagination li a.active:before {
+  width: 10px;
+  height: 10px;
+  background: none;
+  border: 1px solid black;
+  margin-top: -4px;
+  left: 8px; }
+
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+  overflow: auto; }
+
+.disabled-onepage-scroll .onepage-wrapper .ops-section {
+  position: relative !important;
+  top: auto !important; }
+
+.disabled-onepage-scroll .onepage-wrapper {
+  -webkit-transform: none !important;
+  transform: none !important;
+  -ms-transform: none !important;
+  min-height: 100%; }
+
+.disabled-onepage-scroll .onepage-pagination {
+  display: none; }
+
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+  position: inherit; }
+
+html {
+  font-size: 8px;
+  font-family: sans-serif; }
+
+body {
+  background: #111;
+  color: #FFF;
+  font-family: helvetica;
+  font-family: "NeueHaasGroteskText W01", "sans-serif"; }
+
+section {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh; }
+
+img {
+  display: block;
+  width: 100%; }
+
+.container {
+  -ms-flex: 1;
+      flex: 1;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 0 4em;
+  margin: 0 auto; }
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 4em;
+  z-index: 100; }
+
+footer {
+  position: absolute;
+  bottom: 5em;
+  left: 5em; }
+
+.logo {
+  width: 11em;
+  height: auto; }
+
+.col {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: relative; }
+
+.col-third {
+  width: 33.3333%; }
+
+.col-twoThirds {
+  width: 66.6666%; }
+
+.body,
+.title {
+  margin-bottom: 2.5rem; }
+
+.title {
+  font-size: 4.75em;
+  line-height: 6rem;
+  color: #FFF;
+  font-family: "NeueHaasGroteskDisp Pro", "sans-serif"; }
+
+.body {
+  color: #777;
+  max-width: 22em;
+  font-size: 2.25em;
+  line-height: 3rem;
+  margin-bottom: 3rem; }
+
+.copy {
+  min-height: 33.33333vh; }
+
+.appStoreLink {
+  display: block;
+  width: 21em; }
+
+.imgContainer {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  max-height: 145em;
+  max-width: 200em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.sec-1-img {
+  position: absolute;
+  top: 4em;
+  bottom: 4em;
+  right: -4em;
+  left: 4em;
+  background-image: url(../images/sp1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right; }
